@@ -17,7 +17,7 @@ class RegistrationRoute extends Component {
     return (
       <section>
         <p>
-          Practice learning a language with the spaced reptition revision technique.
+          Ricorda uses spaced repetition to help you remember words in Italian
         </p>
         <h2>Sign up</h2>
         <RegistrationForm

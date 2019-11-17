@@ -1,0 +1,60 @@
+/* #78AEFF blue base  #C4DCFF ligth blue #3C5780 deark grey blue #626E80 grey #608BCC */
+
+#registration-form {
+  font-family:'Open Sans Condensed', sans-serif;
+	width: 400px;
+  min-width:250px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#registration-form input {
+  font-family:'Open Sans Condensed', sans-serif;
+  text-transform:uppercase;
+  outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #C4DCFF;
+	padding: 10px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 5px;
+  position:relative;
+  top:0;
+}
+
+#registration-form label {
+  display: none;
+}
+#registration-form button[type=submit] {
+  font-family:'Open Sans Condensed', sans-serif;
+  text-transform:uppercase;
+  outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	background-color:#3C5780;
+	padding: 10px;
+  color: white;
+  border: none;
+	border-radius: 3px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 5px;
+	cursor: pointer;
+  position:relative;
+  top:0;
+}
+
+#registration-form button[type=submit]:hover {
+  background-color: #626E80;
+  
+}
