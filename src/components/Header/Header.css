@@ -14,18 +14,26 @@ header * {
 }
 
 header .title {
-  margin-left: 50px;
+  margin-left: 20px;
   color: #3C5780;
   align-self: center;
   font-family: 'Pacifico', cursive;
-  font-size: 150%;
+  font-size: 100%;
+  width: 20%;
+}
+
+.title-postfix {
+  font-size: 10px;
+  display: block;
+  margin-left: 20px;
+  text-align: center;
 }
 
 nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  margin-right: 30px;
+  margin-left: 20px;
 }
 
 nav a {
@@ -37,3 +45,12 @@ nav a {
   align-self: center;
 }
 
+@media only screen and (min-width: 600px) {
+  header .title {
+    margin-left: 50px;
+  }
+  nav {
+    width: 100%;
+    margin-right: 50px;
+  }
+}

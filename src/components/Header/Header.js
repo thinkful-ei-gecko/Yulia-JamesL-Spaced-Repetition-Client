@@ -45,6 +45,7 @@ class Header extends Component {
           <Link to='/' className='title'>
             Ricorda
           </Link>
+          <span className='title-postfix'>Spaced repetition</span>
         </h1>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
