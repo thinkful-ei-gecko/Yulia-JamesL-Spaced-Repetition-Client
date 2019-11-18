@@ -40,9 +40,9 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header className='app-header'>
         <h1>
-          <Link to='/'>
+          <Link to='/' className='title'>
             Ricorda
           </Link>
         </h1>

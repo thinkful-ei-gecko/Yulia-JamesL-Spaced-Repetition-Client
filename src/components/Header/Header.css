@@ -1,0 +1,39 @@
+.app-header {
+  background-color: #C4DCFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  /* box-shadow: 0 0 15px 0 black; */
+}
+
+header * {
+  align-self: center;
+}
+
+header .title {
+  margin-left: 50px;
+  color: #3C5780;
+  align-self: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 150%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+nav a {
+  color: #3C5780;
+  border: 2px solid #3C5780;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding: 3px 7px 7px 7px;
+  align-self: center;
+}
+

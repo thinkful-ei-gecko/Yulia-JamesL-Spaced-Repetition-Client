@@ -40,7 +40,7 @@ class RegistrationForm extends Component {
   render() {
     const { error } = this.state
     return (
-      <div id="registration-form">
+      <div className="form">
       <form
         onSubmit={this.handleSubmit}
       >
@@ -87,7 +87,7 @@ class RegistrationForm extends Component {
             Sign up
           </Button>
           {' '}
-          <Link to='/login'>Already have an account?</Link>
+          <Link to='/login' className="already-have-account">Already have an account?</Link>
         </footer>
       </form>
       </div>

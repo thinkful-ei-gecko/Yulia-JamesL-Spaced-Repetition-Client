@@ -1,3 +1,25 @@
+*,
+	*:after,
+	*:before {
+		box-sizing: border-box;
+  }
+
+#root {
+  margin-top: 120px;
+  font-family: 'Quicksand', sans-serif;
+}
+
 h2 {
   text-align: center;
+  color: #3C5780;
+}
+
+a {
+  text-decoration: none;
+}
+
+.description {
+  font-size: 150%;
+  margin: 50px;
+  color: #3C5780;
 }
