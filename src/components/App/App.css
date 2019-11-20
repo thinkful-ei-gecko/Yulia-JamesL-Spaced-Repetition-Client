@@ -5,7 +5,7 @@
   }
 
 #root {
-  margin-top: 120px;
+  margin-top: 130px;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -22,4 +22,51 @@ a {
   font-size: 150%;
   margin: 50px;
   color: #3C5780;
+}
+
+.dashboard {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #3C5780;
+  border-radius: 5px;
+}
+
+.total-score {
+  font-style: italic;
+}
+
+.start-practicing {
+  border: 2px solid #3E72C1;
+  background-color: #3E72C1;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 8px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.words-heading {
+  text-align: center;
+}
+
+.word-list {
+  /* list-style: none; */
+  /* border: 2px solid black; */
+  padding-bottom: 10px;
+}
+
+.correct-score, .incorrect-score {
+  display: block;
+  font-style: italic;
+}
+@media only screen and (min-width: 600px) {
+  .dashboard {
+    width:60%;
+    margin: auto;
+  }
 }

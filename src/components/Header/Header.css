@@ -5,52 +5,114 @@
   left: 0;
   right: 0;
   height: 80px;
-  display: flex;
-  /* box-shadow: 0 0 15px 0 black; */
 }
 
 header * {
-  align-self: center;
+  /* align-self: center; */
+  /* border: 2px solid black; */
 }
 
 header .title {
+  position: absolute;
+  top: 0;
   margin-left: 20px;
   color: #3C5780;
-  align-self: center;
+  width: 130px;
   font-family: 'Pacifico', cursive;
   font-size: 100%;
-  width: 20%;
 }
 
 .title-postfix {
-  font-size: 10px;
+  position: absolute;
+  top: 42px;
+  font-size: 12px;
   display: block;
-  margin-left: 20px;
-  text-align: center;
+  margin-left: 25px;
+  width: 130px;
+  text-align: left;
 }
 
-nav {
-  display: flex;
+#user-links {
+  display: none;
+  position: absolute;
+  top: 80px;
   width: 100%;
-  justify-content: flex-end;
-  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  height: 40px;
 }
 
-nav a {
+#user-links a {
   color: #3C5780;
-  border: 2px solid #3C5780;
-  border-radius: 3px;
+  width: 70px;
   margin-right: 20px;
   padding: 3px 7px 7px 7px;
-  align-self: center;
+  border-left: 2px solid #3C5780;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+
+.show-username {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  padding: 8px 0 5px 0;
+}
+
+.bars {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  color: #3C5780;
 }
 
 @media only screen and (min-width: 600px) {
+  .app-header {
+    display: flex;
+  }
+
   header .title {
+    font-size: 100;
     margin-left: 50px;
   }
-  nav {
+
+  .title-postfix {
+    margin-left: 55px;
+    text-align: left;
+  }
+
+  #user-links {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
     width: 100%;
-    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    height: 60px;
+    padding-right: 43px;
+    /* border: 2px solid #3C5780; */
+  }
+
+  .bars {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: #3C5780;
+  }
+
+  #user-links a {
+    border: 2px solid #3C5780;
+    border-radius: 3px;
+    width: 80px;
+    padding: 6px 10px 5px 10px;
+  }
+
+  #user-links a:hover {
+    background-color: #3C5780;
+    color: white;
   }
 }

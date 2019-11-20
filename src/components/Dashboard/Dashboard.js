@@ -36,21 +36,21 @@ class Dashboard extends Component {
   render() {
     console.log(this.state.language)
     return (
-      <section>
+      <section className="dashboard">
         <h2>{this.state.language.name}</h2>
-        <section>Total correct answers: {this.state.language.total_score}</section>
-        <h3>Words to practice</h3>
-        <ul>
+        <section className="total-score">Total correct answers: {this.state.language.total_score}</section>
+        <h3 className="words-heading">Words to practice</h3>
+        <ul className="word-list">
         {this.state.words.map((word, index) => {
           return(
            <li key={index}>
              <h4>{word.original}</h4>
-             <span>correct answer count: {word.correct_count}</span>
-             <span>incorrect answer count: {word.incorrect_count}</span></li>
+             <span className="correct-score">correct answer count: {word.correct_count}</span>
+             <span className="incorrect-score">incorrect answer count: {word.incorrect_count}</span></li>
           )}
         )}
         </ul>
-        <Link to='/learn'>Start practicing</Link>
+        <Link to='/learn' className="start-practicing">Start practicing</Link>
       </section>
     )
   }
