@@ -1,0 +1,98 @@
+/* #78AEFF blue base, #C4DCFF light blue, #3C5780 dark grey blue, #626E80 grey #608BCC blue */
+
+.learn-section {
+  background: #626E80;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 30px;
+  width: 80%;
+  margin: 130px auto 30px auto;
+}
+
+.total {
+  text-align: center;
+  font-size: 1.5em;
+  border-top: 2px solid #C4DCFF;
+  border-bottom: 2px solid #C4DCFF;
+  padding: 5px;
+}
+
+.translate {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.word-display {
+  text-align: center;
+  background: #C4DCFF;
+  width: 90%;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 auto 20px auto;
+}
+
+.word-display span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.word-guess-form {
+  text-align: center;
+}
+
+#translate-input {
+  font-size: 2em;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.submit-btn, .next-btn {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px auto 20px auto;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3C5780;
+  color: #fff;
+}
+
+.submit-btn:hover, .next-btn:hover {
+  cursor: pointer;
+  background-color: #C4DCFF;
+  color: #000;
+}
+
+.word-stats {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.correct-prompt, .incorrect-prompt {
+  color: #C4DCFF;
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.correct-answer-prompt {
+  text-align: center;
+  color: #C4DCFF;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.message {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
