@@ -4,6 +4,10 @@
 		box-sizing: border-box;
   }
 
+body {
+  background: url('/background.png') no-repeat fixed;
+}
+
 #root {
   margin-top: 130px;
   font-family: 'Quicksand', sans-serif;
