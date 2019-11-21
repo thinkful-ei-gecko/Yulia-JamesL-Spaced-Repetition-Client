@@ -40,16 +40,16 @@ class Dashboard extends Component {
         <h2>{this.state.language.name}</h2>
         <section className="total-score">Total correct answers: {this.state.language.total_score}</section>
         <h3 className="words-heading">Words to practice</h3>
-        <ul className="word-list">
+        <article className="word-list">
         {this.state.words.map((word, index) => {
           return(
-           <li key={index}>
-             <h4>{word.original}</h4>
+           <section key={index} className="word-card">
+             <h4 className="word-title">{word.original}</h4>
              <span className="correct-score">correct answer count: {word.correct_count}</span>
-             <span className="incorrect-score">incorrect answer count: {word.incorrect_count}</span></li>
+             <span className="incorrect-score">incorrect answer count: {word.incorrect_count}</span></section>
           )}
         )}
-        </ul>
+        </article>
         <Link to='/learn' className="start-practicing">Start practicing</Link>
       </section>
     )

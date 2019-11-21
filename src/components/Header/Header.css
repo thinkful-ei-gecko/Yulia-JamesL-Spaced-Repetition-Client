@@ -5,7 +5,10 @@
   left: 0;
   right: 0;
   height: 80px;
+  z-index: 1;
+  box-shadow: 0px 4px 10px #626E80;
 }
+
 
 header .title {
   position: absolute;
