@@ -15,7 +15,7 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section>
+      <section className="form-background">
         <p className="description">
           Ricorda uses spaced repetition to help you remember words in Italian
         </p>

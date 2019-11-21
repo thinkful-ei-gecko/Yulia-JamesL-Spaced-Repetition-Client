@@ -10,22 +10,32 @@
 }
 
 
-header .title {
+header .title h1{
   position: absolute;
   top: 0;
   margin-left: 20px;
   color: #3C5780;
   width: 130px;
   font-family: 'Pacifico', cursive;
-  font-size: 100%;
+  font-size: 25px;
+  z-index: 10;
+}
+
+.title h1:hover{
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
 }
 
 .title-postfix {
   position: absolute;
-  top: 42px;
+  font-family: 'Quicksand', sans-serif;
+  top: 30px;
   font-size: 12px;
   display: block;
-  margin-left: 25px;
+  margin: 0;
   width: 130px;
   text-align: left;
 }
@@ -75,6 +85,7 @@ header .title {
 .bars {
   position: absolute;
   right: 0;
+  margin-top: 20px;
   margin-right: 20px;
   color: #3C5780;
 }
@@ -84,13 +95,12 @@ header .title {
     display: flex;
   }
 
-  header .title {
-    font-size: 100;
+  header .title h1{
     margin-left: 50px;
   }
 
   .title-postfix {
-    margin-left: 55px;
+    top: 35px;
     text-align: left;
   }
 
@@ -120,7 +130,8 @@ header .title {
     border: 2px solid #3C5780;
     border-radius: 3px;
     width: 80px;
-    padding: 6px 10px 5px 10px;
+    padding: 6px 10px 5px 8px;
+    text-align: center;
   }
 
   .user-links a:hover {

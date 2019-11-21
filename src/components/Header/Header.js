@@ -48,7 +48,7 @@ class Header extends Component {
     return (
       <div>
         <nav className={this.state.isOpen ? "user-links open-links"  : "user-links"}>
-          <Link to='/login'>Login</Link>
+          <Link to='/login' id='login-link'>Login</Link>
           <div className="separator"></div>
           <Link to='/register'>Sign up</Link>
         </nav>
@@ -65,12 +65,13 @@ class Header extends Component {
   render() {
     return (
       <header className='app-header'>
+        <Link to='/' className='title'>
         <h1>
-          <Link to='/' className='title'>
-            Ricorda
-          </Link>
-          <span className='title-postfix'>Spaced repetition</span>
+            Ricorda 
+            <span className='title-postfix'>Spaced repetition</span> 
         </h1>
+        </Link>
+       
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}

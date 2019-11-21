@@ -39,6 +39,7 @@ class Dashboard extends Component {
       <section className="dashboard">
         <h2>{this.state.language.name}</h2>
         <section className="total-score">Total correct answers: {this.state.language.total_score}</section>
+        <Link to='/learn' className="start-practicing">Start practicing</Link>
         <h3 className="words-heading">Words to practice</h3>
         <article className="word-list">
         {this.state.words.map((word, index) => {
@@ -50,7 +51,7 @@ class Dashboard extends Component {
           )}
         )}
         </article>
-        <Link to='/learn' className="start-practicing">Start practicing</Link>
+        
       </section>
     )
   }
