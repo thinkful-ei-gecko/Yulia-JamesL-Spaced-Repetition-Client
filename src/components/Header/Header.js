@@ -3,44 +3,43 @@ import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 
 class Header extends Component {
+  state = {
+    isOpen: false
+  }
   static contextType = UserContext
 
   handleLogoutClick = () => {
     this.context.processLogout()
   }
 
-  showMenu = () => {
-    let x = document.getElementById('user-links');
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  toggleMenu = () => {
+    this.setState({ isOpen: !this.state.isOpen });
   }
 
   renderLogoutLink() {
     return (
       <div>
-        <nav id="user-links">
+        <nav  className={this.state.isOpen ? "user-links open-links"  : "user-links"}>
           <span className="show-username">
             {this.context.user.name}
           </span>
+          <div className="separator"></div>
           <Link
             onClick={this.handleLogoutClick}
             to='/login'>
             Logout
           </Link>
         </nav>
-        <a href="javascript:void(0);">
-            <FontAwesomeIcon 
-              icon={faBars} size="2x" 
-              className="bars"
-              onClick={this.showMenu}>
-            </FontAwesomeIcon></a>
+        <FontAwesomeIcon 
+          icon={this.state.isOpen ? faTimes : faBars} size="2x" 
+          className="bars"
+          onClick={() => this.toggleMenu()}
+          >
+        </FontAwesomeIcon>
       </div>  
     )
   }
@@ -48,15 +47,17 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <div>
-        <nav id="user-links">
+        <nav className={this.state.isOpen ? "user-links open-links"  : "user-links"}>
           <Link to='/login'>Login</Link>
-          {' '}
+          <div className="separator"></div>
           <Link to='/register'>Sign up</Link>
         </nav>
-        <a href="javascript:void(0);"><FontAwesomeIcon 
-          icon={faBars} size="2x" className="bars"
-          onClick={this.showMenu}>
-          </FontAwesomeIcon></a>
+        <FontAwesomeIcon 
+          icon={this.state.isOpen ? faTimes : faBars} size="2x" 
+          className="bars"
+          onClick={() => this.toggleMenu()}
+          >
+        </FontAwesomeIcon>
       </div>
     )
   }
