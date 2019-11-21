@@ -15,7 +15,8 @@ body {
 
 h2 {
   text-align: center;
-  color: #3C5780;
+  color: #ffffff;
+  font-size: 150%;
 }
 
 a {
@@ -34,8 +35,10 @@ a {
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  border: 2px solid #3C5780;
-  border-radius: 5px;
+  padding-top: 10px;
+  border: 2px solid #626E80;
+  border-radius: 15px;
+  background: #626E80;
 }
 
 .total-score {
@@ -43,15 +46,18 @@ a {
 }
 
 .start-practicing {
-  border: 2px solid #3E72C1;
-  background-color: #3E72C1;
-  color: white;
-  border-radius: 5px;
+  /* border: 2px solid #3C5780; */
+  background-color:  #C4DCFF;
+  color: #3C5780;
+  border-radius: 15px;
   padding: 4px 8px;
-  display: inline-block;
-  width: 100%;
+  display: block;
+  margin: auto;
+  width: 90%;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 15px;
+  
 }
 
 .words-heading {
@@ -59,9 +65,25 @@ a {
 }
 
 .word-list {
-  /* list-style: none; */
-  /* border: 2px solid black; */
+  list-style: none;
+  border: 2px solid black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.word-card {
+  width: 250px;
+  margin: 10px auto;
+  padding-left: 10px;
   padding-bottom: 10px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 3px 5px 10px black;
+}
+
+.word-title {
+  text-align: center;
 }
 
 .correct-score, .incorrect-score {
@@ -72,5 +94,16 @@ a {
   .dashboard {
     width:60%;
     margin: auto;
+    flex-direction: row;
+  }
+
+  .word-card {
+    width: 50%;
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 5px 10px black;
   }
 }
