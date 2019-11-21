@@ -107,7 +107,7 @@ class LearningRoute extends Component {
           {!this.state.answer ? (
             <>
             <h2 className="translate">Translate the word:</h2>
-            <span>{this.state.head}</span></>
+            <span className="next-word">{this.state.head}</span></>
             )
             : (
             <div className="DisplayFeedback">
@@ -115,17 +115,12 @@ class LearningRoute extends Component {
             </div>
           )}
         </div>
-        {/* {!this.state.answer ? (
-          <div className="word-display">
-            <span>{this.state.head}</span>
-          </div>
-          ) : (<div> {" "}
-        </div>)} */}
 
       {!this.state.answer ? (
         <form className="word-guess-form" onSubmit={e => this.handleSubmit(e)}>
               <Label 
                 htmlFor="learn-guess-input"
+                className="learn-guess-label"
               >
               What's the translation for this word? 
               </Label> 
