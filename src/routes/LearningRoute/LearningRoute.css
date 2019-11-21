@@ -3,15 +3,17 @@
 .learn-section {
   background: #626E80;
   border-radius: 15px;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 30px;
-  width: 80%;
+  width: 85%;
   margin: 150px auto 30px auto;
+  word-wrap: break-word;
 }
 
 .total {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  font-weight: bold;
   border-top: 2px solid #C4DCFF;
   border-bottom: 2px solid #C4DCFF;
   padding: 5px;
@@ -20,33 +22,42 @@
 .translate {
   color: black;
   font-size: 2em;
-  margin-bottom: 10px;
 }
 
-.word-display {
+.check-input {
   text-align: center;
+}
+
+.check-input .next-word {
+  display: inline-block;
+  text-align: center;
+  margin: 10px auto 40px auto;
   background: #C4DCFF;
   width: 90%;
   border-radius: 20px;
-  padding: 30px;
-  margin: 0 auto 20px auto;
-}
-
-.word-display span {
+  padding: 15px;
   font-size: 2em;
   font-weight: bold;
+  box-shadow: 5px 5px 5px #3C5780;
 }
 
 .word-guess-form {
   text-align: center;
 }
 
+.learn-guess-label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 #learn-guess-input {
+  display: block;
+  margin: 20px auto 0 auto;
   font-size: 2em;
   border: none;
   border-radius: 10px;
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 12px;
   text-align: center;
 }
 
@@ -93,6 +104,47 @@
   text-align: center;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 680px) {
+  #learn-guess-input {
+    width: 70%;
+  }
+
+  .check-input .next-word {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .learn-section {
+    width: 70%;
+  }
+  #learn-guess-input {
+    width: 60%;
+  }
+
+  .check-input .next-word {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .learn-section {
+    width: 50%;
+  }
+  #learn-guess-input {
+    width: 50%;
+  }
+
+  .check-input .next-word {
+    width: 50%;
+  }
+  .total {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
