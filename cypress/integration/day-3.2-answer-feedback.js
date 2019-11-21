@@ -93,7 +93,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('h2')
             .should(
               'have.text',
-              `Good try, but not quite right :(`,
+              `Good try, but not quite right`,
             )
           cy.get('.DisplayFeedback p')
             .should(
@@ -103,7 +103,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('button')
             .should(
               'have.text',
-              `Try another word!`,
+              `Next Word`,
             )
         })
       })
@@ -147,7 +147,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('h2')
             .should(
               'have.text',
-              `You were correct! :D`,
+              `You are correct!`,
             )
           cy.get('.DisplayFeedback p')
             .should(
@@ -157,7 +157,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('button')
             .should(
               'have.text',
-              `Try another word!`,
+              `Next Word`,
             )
         })
       })

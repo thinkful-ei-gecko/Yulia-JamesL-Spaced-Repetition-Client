@@ -15,7 +15,7 @@ describe(`User story: Application name and purpose`, function() {
       .get('p')
       .should(
         'have.text',
-        'Ricorda uses spaced repetition to help you remember words in Italian.'
+        'Ricorda uses spaced repetition to help you remember words in Italian'
       )
   })
 })

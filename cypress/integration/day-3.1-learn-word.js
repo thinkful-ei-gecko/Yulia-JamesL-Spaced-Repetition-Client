@@ -58,7 +58,7 @@ describe(`User story: Presented with word`, function() {
         .and('have.attr', 'required', 'required')
 
       cy.get('button[type=submit]')
-        .should('have.text', 'Submit your answer')
+        .should('have.text', 'Submit')
     })
   })
 
@@ -72,11 +72,11 @@ describe(`User story: Presented with word`, function() {
         cy.root()
           .should(
             'contain',
-            `You have answered this word correctly ${languageHeadFixture.wordCorrectCount} times.`,
+            `Answered Correctly: ${languageHeadFixture.wordCorrectCount} times`,
           )
           .and(
             'contain',
-            `You have answered this word incorrectly ${languageHeadFixture.wordIncorrectCount} times.`,
+            `Answered Incorrectly: ${languageHeadFixture.wordIncorrectCount} times`,
           )
       })
     })
