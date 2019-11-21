@@ -7,11 +7,6 @@
   height: 80px;
 }
 
-header * {
-  /* align-self: center; */
-  /* border: 2px solid black; */
-}
-
 header .title {
   position: absolute;
   top: 0;
@@ -32,32 +27,46 @@ header .title {
   text-align: left;
 }
 
-#user-links {
+.user-links {
   display: none;
   position: absolute;
   top: 80px;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: right;
-  height: 40px;
+  width: 50%;
+  right: 0;
+  height: 70px;
 }
 
-#user-links a {
+.open-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #3C5780;
+}
+
+.user-links a {
   color: #3C5780;
   width: 70px;
   margin-right: 20px;
   padding: 3px 7px 7px 7px;
-  border-left: 2px solid #3C5780;
+}
+
+.open-links a {
+  width: 100%;
+  margin: 0;
   text-align: center;
-  padding: 5px 10px 5px 10px;
+}
+
+.separator {
+  width: 100%;
+  border: 2px solid #3C5780;
 }
 
 .show-username {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  padding: 8px 0 5px 0;
+  /* display: block; */
+  /* text-align: center; */
+  padding: 8px 9px 5px 9px;
 }
 
 .bars {
@@ -82,7 +91,7 @@ header .title {
     text-align: left;
   }
 
-  #user-links {
+  .user-links {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -104,15 +113,19 @@ header .title {
     color: #3C5780;
   }
 
-  #user-links a {
+  .user-links a {
     border: 2px solid #3C5780;
     border-radius: 3px;
     width: 80px;
     padding: 6px 10px 5px 10px;
   }
 
-  #user-links a:hover {
+  .user-links a:hover {
     background-color: #3C5780;
     color: white;
+  }
+
+  .separator {
+    display: none;
   }
 }
