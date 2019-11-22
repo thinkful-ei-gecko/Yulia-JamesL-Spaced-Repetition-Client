@@ -39,16 +39,17 @@ class Dashboard extends Component {
         <section className="total-score">Total correct answers: {this.state.language.total_score}</section>
         <Link to='/learn' className="start-practicing">Start practicing</Link>
         <h3 className="words-heading">Words to practice</h3>
-        <article className="word-list">
+         <ul className="word-list">
           {this.state.words.map((word, index) => {
             return(
-            <section key={index} className="word-card">
+             
+            <li key={index} className="word-card">
               <h4 className="word-title">{word.original}</h4>
               <span className="correct-score">correct answer count: {word.correct_count}</span>
-              <span className="incorrect-score">incorrect answer count: {word.incorrect_count}</span></section>
+              <span className="incorrect-score">incorrect answer count: {word.incorrect_count}</span></li>
             )}
           )}
-        </article>
+        </ul>
         
       </section>
     )

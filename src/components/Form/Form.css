@@ -37,7 +37,7 @@ main {
   top:0;
 }
 
-.form #username-input {
+.form #registration-username-input, #login-username-input {
 	text-transform: lowercase;
 }
 
