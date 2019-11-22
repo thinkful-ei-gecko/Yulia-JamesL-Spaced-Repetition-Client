@@ -37,6 +37,10 @@ main {
   top:0;
 }
 
+.form #username-input {
+	text-transform: lowercase;
+}
+
 .form label {
   display: none;
 }

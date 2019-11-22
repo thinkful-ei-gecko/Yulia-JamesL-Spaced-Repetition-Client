@@ -63,7 +63,7 @@ class RegistrationForm extends Component {
             Choose a username<Required />
           </Label>
           <Input
-            id='registration-username-input'
+            id='username-input'
             name='username'
             placeholder='User name'
             required
