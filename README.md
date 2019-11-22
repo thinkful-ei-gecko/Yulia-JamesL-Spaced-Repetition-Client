@@ -1,12 +1,15 @@
 # Ricorda - Spaced Repetition
+This application was completed as a pair project by Yulia Khisamutdinova and James Lee.
 
 * Live version: https://ricorda.now.sh
+* Demo Username: guest
+* Demo Password: Password1!
 * Required Ricorda API:
   - Live: https://fathomless-scrubland-69489.herokuapp.com
   - Repository: https://github.com/thinkful-ei-gecko/Yulia-JamesL-Spaced-Repetition-Server
  
 ## Description
-Ricorda implements spaced repetition in JavaScript. It has an initial mode for learning new words in Italian. Each word has corresponding 'memory value' starting at 1. If the user's answer was correct double the value. If the answer was wrong reset value to 1. Then move question back value number of places in the list. The algorithm implemented using a singly linked list.
+Ricorda implements spaced repetition in JavaScript. It has an initial mode for learning new words in Italian. Our algorithm implements a singly linked list to show words that are answered incorrectly more frequently than words that are answered correctly.
 
 ## To setup the application
 
