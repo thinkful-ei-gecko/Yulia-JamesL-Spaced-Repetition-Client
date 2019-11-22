@@ -71,7 +71,6 @@ class Header extends Component {
             <span className='title-postfix'>Spaced repetition</span> 
         </h1>
         </Link>
-       
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}

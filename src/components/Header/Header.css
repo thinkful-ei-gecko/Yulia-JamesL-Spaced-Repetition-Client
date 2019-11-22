@@ -9,7 +9,6 @@
   box-shadow: 0px 4px 10px #626E80;
 }
 
-
 header .title h1{
   position: absolute;
   top: 0;
@@ -77,8 +76,6 @@ header .title h1{
 }
 
 .show-username {
-  /* display: block; */
-  /* text-align: center; */
   padding: 8px 9px 5px 9px;
 }
 
@@ -115,7 +112,6 @@ header .title h1{
     text-align: right;
     height: 60px;
     padding-right: 43px;
-    /* border: 2px solid #3C5780; */
   }
 
   .bars {

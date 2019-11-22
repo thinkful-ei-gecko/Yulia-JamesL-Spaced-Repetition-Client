@@ -73,8 +73,9 @@ class LearningRoute extends Component {
 
   handleInput = (e) => {
     const guess = e.target.value;
+    let str = guess.toLowerCase();
     this.setState({
-      guess: guess
+      guess: str
     });
   };
 
@@ -90,11 +91,9 @@ class LearningRoute extends Component {
       result = (
         <>
           <h2 className="incorrect-prompt">Good try, but not quite right</h2>
-          {/* <div> */}
           <p className="correct-answer-prompt">
           The correct translation for {this.state.currWord} was {this.state.answer} and you chose {this.state.guess}!
           </p>
-          {/* </div> */}
         </>
       );
     };
@@ -118,22 +117,21 @@ class LearningRoute extends Component {
 
       {!this.state.answer ? (
         <form className="word-guess-form" onSubmit={e => this.handleSubmit(e)}>
-              <Label 
-                htmlFor="learn-guess-input"
-                className="learn-guess-label"
-              >
-              What's the translation for this word? 
-              </Label> 
-              <Input 
-                id="learn-guess-input"
-                type="text"
-                value={this.state.guess}
-                onChange={e => this.handleInput(e)}
-                name="question"
-                required
-              />
-              <Button className="submit-btn" type="submit">Submit</Button>
-            
+          <Label 
+            htmlFor="learn-guess-input"
+            className="learn-guess-label"
+          >
+            What's the translation for this word? 
+          </Label> 
+          <Input 
+            id="learn-guess-input"
+            type="text"
+            value={this.state.guess}
+            onChange={e => this.handleInput(e)}
+            name="question"
+            required
+          />
+          <Button className="submit-btn" type="submit">Submit</Button>   
         </form>
         
         ) : (
@@ -154,7 +152,6 @@ class LearningRoute extends Component {
         )}
       </main>
       </section>
-   
     );
   };
 };

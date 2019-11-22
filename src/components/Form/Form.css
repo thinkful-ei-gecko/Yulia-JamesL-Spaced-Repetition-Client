@@ -1,9 +1,7 @@
-
-/* #78AEFF blue base  #C4DCFF ligth blue #3C5780 deark grey blue #626E80 grey #608BCC blue */
-
 main {
 	width: 100%;
 }
+
 .form-background {
 	background-color: #626E80;
 	opacity: 0.9;
@@ -22,7 +20,6 @@ main {
 }
 
 .form input {
-  text-transform:uppercase;
   outline:none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -43,8 +40,8 @@ main {
 .form label {
   display: none;
 }
+
 .form button[type=submit] {
-  /* font-family:'Open Sans Condensed', sans-serif; */
   text-transform:uppercase;
   outline:none;
 	-webkit-box-sizing: border-box;

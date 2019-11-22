@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Input, Required, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import Button from '../Button/Button'
-import './RegistrationForm.css'
 
 class RegistrationForm extends Component {
   static defaultProps = {
