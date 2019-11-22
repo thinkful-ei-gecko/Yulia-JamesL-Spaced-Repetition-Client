@@ -35,7 +35,8 @@ class LearningRoute extends Component {
           wordCorrectCount: data.wordCorrectCount,
           wordIncorrectCount: data.wordIncorrectCount,
           currWord: data.nextWord
-        });
+        })
+        
       });
   };
 
@@ -59,7 +60,8 @@ class LearningRoute extends Component {
         head: data.nextWord,
         total: data.totalScore,
         wordCorrectCount: data.wordCorrectCount,
-        wordIncorrectCount: data.wordIncorrectCount
+        wordIncorrectCount: data.wordIncorrectCount,
+        currWord: this.state.head
       });
     });
   };
